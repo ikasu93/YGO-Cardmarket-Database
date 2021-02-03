@@ -1,0 +1,15 @@
+parse picture to text with information
+->json: pack, cardname, country, language, isFirstEd
+
+TODO: condition
+
+map:
+-pack->packname
+-name->url_name
+
+create url -> 
+
+find first price of url
+add as entry in mongodb
+with name, cardname, etc.
+
