@@ -8,7 +8,8 @@ conditionDict = {
     "7": "Poor"
 }
 
-def getCondition(num):
+
+def get_condition(num):
     return conditionDict[num]
 
 
@@ -17,8 +18,10 @@ languageDict = {
     "3": "Deutsch"
 }
 
-def getLanguage(num):
+
+def get_language(num):
     return languageDict[num]
+
 
 seriesDict = {
     "MAGO": "Maximum-Gold",
@@ -40,11 +43,11 @@ seriesDict = {
 }
 
 
-def getSeries(num):
+def get_series(num):
     return seriesDict[num]
 
 
-def parseLanguage(txt_input):
+def parse_language(txt_input):
     if txt_input == "EN":
         return "1"
     elif txt_input == "DE":
@@ -53,17 +56,17 @@ def parseLanguage(txt_input):
         return "2"
 
 
-def parseEdition(txt_input):
+def parse_edition(txt_input):
     if txt_input == "1. Auflage" or txt_input == "1st Edition":
         return "Y"
     else:
         return "N"
 
 
-def getCardDictInformation(name, series, isFirstEd, language):
+def get_card_dict_information(name, series, is_first_ed, language):
     return {
         "name": name,
-        "series": getSeries(series),
-        "isFirstEd": isFirstEd,
+        "series": get_series(series),
+        "isFirstEd": is_first_ed,
         "card_language": language
     }

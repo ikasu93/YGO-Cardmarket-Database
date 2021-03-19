@@ -3,12 +3,6 @@ from CardmarketScraper import get_card_information
 """
 Some data to push into function to retrieve prices
 """
-card_info_dict = {
-        "card_name": "Downerd-Magician",
-        "card_series": "Legacy-of-the-Valiant",
-        "isFirstEd": "N",
-        "card_language": "3"
-}
 card_info_dict2 = {
         "card_name": "Blue-Eyes-White-Dragon",
         "card_series": "Maximum-Gold",
@@ -16,21 +10,15 @@ card_info_dict2 = {
         "card_language": "1"
 }
 card_info_dict3 = {
-        "card_name": "Alpha-the-Master-of-Beasts",
-        "card_series": "Phantom-Rage",
-        "isFirstEd": "Y",
+        "card_name": "Knightmare-Phoenix",
+        "card_series": "Flames-of-Destruction",
+        "isFirstEd": "N",
         "card_language": "3"
 }
 card_info_dict4 = {
         "card_name": "Maxx-C",
         "card_series": "Collectors-Tins-2012",
         "isFirstEd": "N",
-        "card_language": "3"
-}
-card_info_dict5 = {
-        "card_name": "Downerd-Magician",
-        "card_series": "Premium-Gold-2",
-        "isFirstEd": "Y",
         "card_language": "3"
 }
 card_info_dict6 = {
@@ -105,12 +93,6 @@ card_info_dict17 = {
         "isFirstEd": "Y",
         "card_language": "1"
 }
-card_info_dict17 = {
-        "card_name": "Exodia-the-Forbidden-One",
-        "card_series": "Yugis-Legendary-Decks",
-        "isFirstEd": "Y",
-        "card_language": "1"
-}
 card_info_dict18 = {
         "card_name": "Right-Leg-of-the-Forbidden-One",
         "card_series": "Yugis-Legendary-Decks",
@@ -157,7 +139,7 @@ card_info_dict25 = {
         "card_name": "Slifer-the-Sky-Dragon",
         "card_series": "Premium-Gold",
         "isFirstEd": "N",
-        "card_language": "1"
+        "card_language": "3"
 }
 card_info_dict26 = {
         "card_name": "The-Winged-Dragon-of-Ra",
@@ -177,37 +159,24 @@ card_info_dict28 = {
         "isFirstEd": "N",
         "card_language": "1"
 }
+card_info_dict30 = {
+        "card_name": "Knightmare-Unicorn",
+        "card_series": "2019-Gold-Sarcophagus-Tin-Mega-Pack",
+        "isFirstEd": "Y",
+        "card_language": "1"
+}
+card_info_dict31 = {
+        "card_name": "Blue-Eyes-Alternative-Ultimate-Dragon",
+        "card_series": "2019-Gold-Sarcophagus-Tin",
+        "isFirstEd": "N",
+        "card_language": "1"
+}
 
-
-card_list = []
-card_list.append(card_info_dict)
-card_list.append(card_info_dict2)
-card_list.append(card_info_dict3)
-card_list.append(card_info_dict4)
-card_list.append(card_info_dict5)
-card_list.append(card_info_dict6)
-card_list.append(card_info_dict7)
-card_list.append(card_info_dict8)
-card_list.append(card_info_dict9)
-card_list.append(card_info_dict10)
-card_list.append(card_info_dict11)
-card_list.append(card_info_dict12)
-card_list.append(card_info_dict13)
-card_list.append(card_info_dict14)
-card_list.append(card_info_dict15)
-card_list.append(card_info_dict16)
-card_list.append(card_info_dict17)
-card_list.append(card_info_dict18)
-card_list.append(card_info_dict19)
-card_list.append(card_info_dict20)
-card_list.append(card_info_dict21)
-card_list.append(card_info_dict22)
-card_list.append(card_info_dict23)
-card_list.append(card_info_dict24)
-card_list.append(card_info_dict25)
-card_list.append(card_info_dict26)
-card_list.append(card_info_dict27)
-card_list.append(card_info_dict28)
+card_list = [card_info_dict2, card_info_dict3, card_info_dict4, card_info_dict6, card_info_dict7, card_info_dict8,
+             card_info_dict9, card_info_dict10, card_info_dict11, card_info_dict12, card_info_dict13, card_info_dict14,
+             card_info_dict15, card_info_dict16, card_info_dict17, card_info_dict18, card_info_dict19, card_info_dict20,
+             card_info_dict21, card_info_dict22, card_info_dict23, card_info_dict24, card_info_dict25, card_info_dict26,
+             card_info_dict27, card_info_dict28, card_info_dict30, card_info_dict31]
 
 nearmint = "2"
 excellent = "3"

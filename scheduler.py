@@ -1,6 +1,6 @@
 import schedule
 import time
-from YGOCollectionDatabase import refresh_database
+from YGOCollectionDatabase import list2database
 
 
 """
@@ -108,12 +108,6 @@ card_info_dict17 = {
         "isFirstEd": "Y",
         "card_language": "1"
 }
-card_info_dict17 = {
-        "card_name": "Exodia-the-Forbidden-One",
-        "card_series": "Yugis-Legendary-Decks",
-        "isFirstEd": "Y",
-        "card_language": "1"
-}
 card_info_dict18 = {
         "card_name": "Right-Leg-of-the-Forbidden-One",
         "card_series": "Yugis-Legendary-Decks",
@@ -176,41 +170,19 @@ card_info_dict27 = {
 }
 
 
-card_list = []
-card_list.append(card_info_dict)
-card_list.append(card_info_dict2)
-card_list.append(card_info_dict3)
-card_list.append(card_info_dict4)
-card_list.append(card_info_dict5)
-card_list.append(card_info_dict6)
-card_list.append(card_info_dict7)
-card_list.append(card_info_dict8)
-card_list.append(card_info_dict9)
-card_list.append(card_info_dict10)
-card_list.append(card_info_dict11)
-card_list.append(card_info_dict12)
-card_list.append(card_info_dict13)
-card_list.append(card_info_dict14)
-card_list.append(card_info_dict15)
-card_list.append(card_info_dict16)
-card_list.append(card_info_dict17)
-card_list.append(card_info_dict18)
-card_list.append(card_info_dict19)
-card_list.append(card_info_dict20)
-card_list.append(card_info_dict21)
-card_list.append(card_info_dict22)
-card_list.append(card_info_dict23)
-card_list.append(card_info_dict24)
-card_list.append(card_info_dict25)
-card_list.append(card_info_dict26)
-card_list.append(card_info_dict27)
+card_list = [card_info_dict, card_info_dict2, card_info_dict3, card_info_dict4, card_info_dict5, card_info_dict6,
+             card_info_dict7, card_info_dict8, card_info_dict9, card_info_dict10, card_info_dict11, card_info_dict12,
+             card_info_dict13, card_info_dict14, card_info_dict15, card_info_dict16, card_info_dict17, card_info_dict18,
+             card_info_dict19, card_info_dict20, card_info_dict21, card_info_dict22, card_info_dict23, card_info_dict24,
+             card_info_dict25, card_info_dict26, card_info_dict27]
 
 nearmint = "2"
 excellent = "3"
 germany = "7"
 
+
 def test():
-    refresh_database(card_list, germany, nearmint)
+    list2database(card_list, germany, nearmint)
 
 
 schedule.every(10).minutes.do(test)
@@ -219,6 +191,3 @@ schedule.every(10).minutes.do(test)
 while 1:
     schedule.run_pending()
     time.sleep(1)
-
-
-#refresh_database(card_list, germany, nearmint)
